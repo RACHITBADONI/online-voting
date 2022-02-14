@@ -1,0 +1,73 @@
+/* to prevent from violating box model behaviour */
+*{
+    box-sizing: border-box;
+}
+
+#topbox{
+    display: flex;
+    background-color: rgb(233, 226, 218);
+    opacity: 0.8;
+}
+/* for giving size to image */
+@media  screen and (max-width:800px) {
+    #topbox img{
+        width:10%;
+    }
+    li{
+        margin-top: 15px;
+    }
+    
+}
+@media  screen and (min-width:800px) {
+    #topbox img{
+        width:5%;
+    }
+    #orderbox{
+        margin-top: 4%;
+        margin-left: 20%;
+    }
+    li{
+        margin-top: 25px;
+    }
+    
+}
+
+/* for removing bullets */
+#topbox li{
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+/* for removing underline */
+a{
+    text-decoration: none;
+}
+/* on hovering */
+#topbox li a:visited{
+    color: darkgoldenrod;
+}
+#topbox li a:hover{
+    border: 2px solid blue;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+/* for active page......see this  */
+/* #topbox li a:active{
+    background-color: black;
+    color: white;
+} */
+h2{
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+}
+ol{
+    list-style: lower-roman;
+    font-family: 'Pacifico', cursive;
+}
+ul{
+    list-style: square;
+}
+body{
+    background-color: antiquewhite;
+}

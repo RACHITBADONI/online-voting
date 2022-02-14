@@ -4,6 +4,12 @@
         <link rel="stylesheet" href="logincss.css">
     </head>
         <body>
+            <nav id="topbox">
+                <img src="/image5.png" alt="error while loading image">
+                <li><a href="index.html">home</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </nav>
             <div class="loginbox">
                 <img src="login1.png" class="loginu">
                 <h1>Login Here</h1>
@@ -12,11 +18,9 @@
                     <input type="text" name=""placeholder="enter username"id="username"required>
                     <p>Password*</p>
                     <input type="password" name=""placeholder="enter password"id="password"required>
-                    <input type="submit" onclick="fdata()"name=""value="Login">
-                    <br>
-                    <a href="#">Lost your password?</a>
-                    <br>
-                    <a href="#">don't have an account?</a>
+                    <input type="submit" onclick="fdata()"name=""value="Login" id="loginboxid">
+                    <div><a href="lostpage.html">Lost your password?</a></div>
+                    <div><a href="register.html">don't have an account?</a></div>
                 </form>
             </div>
         </body>

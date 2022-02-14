@@ -1,0 +1,60 @@
+/* for small screen so the site looks responsive */
+@media screen and (max-width:800px) {
+    *{
+        box-sizing: border-box;
+        background-color: black;
+        color:white;
+    }
+    #registerh2{
+        margin:10%;
+    }
+}
+@media screen and (min-width:800px) {
+    *{
+        box-sizing: border-box;
+        background-color: black;
+        color:wheat;
+    }
+    #registerh2{
+        margin:5%;
+    }
+}
+/* since i want the image to occupy the topmost position */
+img{
+    width:100%;
+    height:8rem;
+}
+#registerh2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+/* for proper adjusting.....done by dry running */
+#mainbox #submainbox .row {
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    /* since two boxes are there so to keep them in a row */
+#mainbox{
+    display: flex;
+    justify-content: center;
+}
+#submainbox2{
+    font-family: 'Playball', cursive;
+    font-size: large;
+    height: 10%;
+    width: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#btn{
+    border: 2px solid blue;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#btn:hover{
+    border:2px solid red;
+    background-color: grey;
+      color:wheat;
+      border-radius: 20px;
+      cursor: pointer;
+}

@@ -1,3 +1,53 @@
+/* to prevent from violating box model behaviour */
+*{
+    box-sizing: border-box;
+}
+
+#topbox{
+    display: flex;
+    background-color: rgb(233, 226, 218);
+    opacity: 0.8;
+}
+/* for giving size to image */
+@media  screen and (max-width:800px) {
+    #topbox img{
+        width:10%;
+    }
+    
+}
+@media  screen and (min-width:800px) {
+    #topbox img{
+        width:5%;
+    }
+    
+}
+
+/* for removing bullets */
+#topbox li{
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+/* for removing underline */
+a{
+    text-decoration: none;
+}
+/* on hovering */
+#topbox li a:visited{
+    color: darkgoldenrod;
+}
+#topbox li a:hover{
+    border: 2px solid blue;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+/* for active page......see this  */
+/* #topbox li a:active{
+    background-color: black;
+    color: white;
+} */
+
 body{
     margin:0;
     padding:0;
@@ -55,4 +105,11 @@ h1{
 .loginbox a:hover
 {
     color: rgb(228, 17, 182);
+}
+/* for creating hover effect on the button */
+#loginboxid:hover{
+    color: antiquewhite;
+         border-radius: 20px;
+         cursor: pointer;
+         background-color: grey;
 }
