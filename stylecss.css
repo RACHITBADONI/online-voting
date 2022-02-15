@@ -51,3 +51,9 @@ h1{
     font-size: 30px;
     right: 10%;
 }
+.submit:hover{
+    border:5px solid red;
+    background-color: black;
+    color:wheat;
+    border-radius: 10px;
+}
