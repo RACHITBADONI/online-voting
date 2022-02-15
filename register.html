@@ -13,12 +13,13 @@
     <img src="/registerimage.png" alt="error while loading image">
     <h2 id="registerh2">enter your details and register yourself</h2>
     <nav id="mainbox">
-    <form action="" id="submainbox">
-        <div class="row">Name*:<input type="text" placeholder="enter your name" id="stud_name" required></div>
+    <form action="" id="submainbox" onsubmit="return validateForm()">
+        <div class="row">Name*:<input type="text" placeholder="enter your name" id="stud_name" required><div id="span_name"></div></div>
         <div class="row">Gender*:<input type="radio" name="gender" id="male"required>Male<input type="radio" name="gender" id="female" required>Female</div>
-        <div class="row">Student id*:<input type="number" placeholder="enter the student id" id="stud_id" required></div>
-        <div class="row">Email*:<input type="email" placeholder="enter your email" id="stud_email"required></div>
-        <div class="row">password*:<input type="password" placeholder="enter your password" id="stud_pswrd"required></div>
+        <div class="row">Student id*:<input type="number" placeholder="enter the student id" id="stud_id" required><div id="span_number"></div></div>
+        <div class="row">Email*:<input type="email" placeholder="enter your email" id="stud_email"required><div id="span_email"></div></div>
+        <div class="row">password*:<input type="password" placeholder="enter your password" id="stud_pswrd"required><div id="span_pswrd"></div></div>
+        <div class="row"> confirm password*:<input type="password" placeholder="Re-enter your password" id="stud_re_pswrd"required><div id="span_re_pswrd"></div></div>
         <div class="row">university*:
             <select name="" id="stud_university">
             <option value="">----select the university----</option>
@@ -28,7 +29,7 @@
             <option value="GEHU_HALDWANI">GEHU HALDWANI</option>
             </select>
         </div>
-        <button id="btn" onclick="getelement()">Submit Now</button>
+        <button id="btn">Submit Now</button>
     </form>
     <section id="submainbox2">
         we welcome you in our community....your vote is precious for us also we want you to enter the details carefully so that your vote can be counted. At last but not the least we want you to be blessed and stay safe.

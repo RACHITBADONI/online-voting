@@ -1,4 +1,43 @@
-// function to register in an id
+// function to register in an id  and also form validation..
+function validateForm()
+{
+	document.getElementById("span_email").innerHTML="";//created so when error is removed the line showing error too gets remove since every time func will be called when click on submit
+	document.getElementById("span_name").innerHTML="";
+	document.getElementById("span_pswrd").innerHTML="";
+	document.getElementById("span_re_pswrd").innerHTML="";
+	let s_email=document.getElementById("stud_email").value;
+	let s_name=document.getElementById("stud_name").value;
+    let s_id=document.getElementById("stud_id").value; 
+	let pswrd=document.getElementById("stud_pswrd").value;
+    let repswrd=document.getElementById("stud_re_pswrd").value; 
+	if(s_name.length<5)
+	{
+		document.getElementById("span_name").innerHTML="*name can't be too short";    
+        return false;
+	}
+	if(s_email.charAt(s_email.length-4)!='.')
+	{
+		document.getElementById("span_email").innerHTML="*email with missing .com extension";    
+		return false;   
+	}
+    // if(s_id.length!=8) // due to this some error..rectify it maybe here input type is a number and since 0 to 9..only 
+	// {                 // or number can be many....
+	// 	document.getElementById("span_id").innerHTML="*id either too short or too long";    
+    //     return false;
+	// }
+	if(pswrd.length<5)
+	{
+		document.getElementById("span_pswrd").innerHTML="*too short password";
+		return false;
+	}
+	if (pswrd!=repswrd)
+	{
+	document.getElementById("span_re_pswrd").innerHTML="*password not matched";    
+    	return false;
+	}
+	getelement();
+}
+
 function getelement()
 {
  let conf=confirm("are you sure you want to continue with this saved data");
