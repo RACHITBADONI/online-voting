@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="stylecss.css">
 </head>
 <body>
-<form action ="">
-<h1 align="center" class="vot"></h1>
- </form><br><br>
+	<div id="img1">
+		<img src="/votingn.png" alt="error">
+	</div>
+<form action ="" id="form" onsubmit="return validate_voting_Form()">
  <div class="onlinebox">
-<p align="right">Today's date:*<input type="date" name="date" id="date" class ="date"required>
-<p>Name:*<input type = "text" name="Name" id="name"required></p><br>
-<fieldset>
-<legend>Gender:*</legend>
-<p>Male<input type="radio" name="gender" id="male"required> Female<input type="radio" name="gender" id="female"required></p>
-</fieldset><br>
-<p>Student id:*<input type="text"required name="stid" id="stid"></p><br>
-<p>Email:*<input type="email" name="email" id="email"required></p><br>
+<p>Today's date:*<input type="date" name="date" id="date"required></p>
+<p>Name:*<input type = "text" placeholder="enter your name" name="Name" id="name"required><span id="div_name"></span></p>
+<div id="genderbox">
+	<p>Gender:*<div id="male_female"><input type="radio" name="gender" id="male"required>Male<input type="radio" name="gender" id="female"required>Female</div></p>
+</div>
+<p>Student id:*<input type="text" placeholder="enter your id" name="stid" id="stid" required><span id="div_stid"></span></p>
+<p>Email:*<input type="email" placeholder="enter your email"name="email" id="email"required><span id="div_email"></span></p>
 <p>university:*
 <select name="university"id="university"required>
 <option value="">----select the university----</option>
@@ -24,8 +24,8 @@
 <option value="GEHU_BHIMTAL">GEHU BHIMTAL</option>
 <option value="GEHU_HALDWANI">GEHU HALDWANI</option>
 </select>
-</p><br>
-<p><h4 align="left">Choose the candidate for voting*
+</p>
+<p>Choose the candidate for voting*
 <select name="choose_candidate"id="candidate"required>
 <option value=" ">------select a candidate-------</option>
 <option value="candidate_1">candidate 1</option>
@@ -33,12 +33,12 @@
 <option value="candidate_3">candidate 3</option>
 <option value="candidate_4">candidate 4</option>
 <option value="candidate_5">candidate 5</option>
-</select></h4>
-</p><br>
-<p><input type="Submit" value="Now submit" onclick="saveData()"class="submit" id="save"></p>
-<p align="right" class="req">required fields are marked by *</p><br>
+</select>
+</p>
+<p><input type="Submit" value="Now submit" class="submit" id="save"></p>
+<p id="req">required fields are marked by *</p>
 </div>
-
+</form>
 </body>
 <script src="localstorage1.js">
 		</script>

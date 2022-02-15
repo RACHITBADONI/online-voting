@@ -79,6 +79,32 @@ function check()
 	alert("wrong id or id does'nt exist");
 }
 
+// validation process
+function validate_voting_Form()
+{
+	document.getElementById("div_name").innerHTML="";//created so when error is removed the line showing error too gets remove since every time func will be called when click on submit
+	document.getElementById("div_stid").innerHTML="";
+	document.getElementById("div_email").innerHTML="";
+	let vote_name=document.getElementById("name").value;
+	let vote_email=document.getElementById("email").value;
+	let vote_id=document.getElementById("stid").value;
+	if(vote_name.length<5)
+	{
+		document.getElementById("div_name").innerHTML="*too short name";
+         return false;
+	}
+	if(isNaN(vote_id))
+	{
+		document.getElementById("div_stid").innerHTML="*only numbers are allowed";
+	    return false;
+	}
+	if(vote_email.charAt(vote_email.length-4)!='.')
+	{
+		document.getElementById("div_email").innerHTML="*email with missing .com extension";    
+		return false;   
+	}
+	saveData();
+}
 // form data to be saved 
 
 function saveData()
