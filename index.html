@@ -10,18 +10,24 @@
                 <li><a href="help.html">help</a></li>
                 <li><a href="contact.html">contact us</a></li>
             </nav>
-            <div class="loginbox">
-                <img src="login1.png" class="loginu">
-                <h1>Login Here</h1>
-                <form>
-                    <p>Username*</p>
-                    <input type="text" name=""placeholder="enter username"id="username"required>
-                    <p>Password*</p>
-                    <input type="password" name=""placeholder="enter password"id="password"required>
-                    <input type="submit" onclick="fdata()"name=""value="Login" id="loginboxid">
-                    <div><a href="lostpage.html">Lost your password?</a></div>
-                    <div><a href="register.html">don't have an account?</a></div>
-                </form>
+            <div class="container">
+                <img src="login1.png" id="loginu">
+                <div class="loginbox">
+                    <h1>Login Here</h1>
+                    <form>
+                        <p>Username*</p>
+                        <input type="text" name=""placeholder="enter username"id="username"required>
+                        <p>Password*</p>
+                        <div>
+                            <input type="password" name=""placeholder="enter password"id="password"required>
+                        </div>
+                        <div>
+                            <input type="submit" onclick="fdata()"name=""value="Login" id="loginboxid">
+                        </div>
+                        <div class="lower"><a href="lostpage.html">Lost your password?</a></div>
+                        <div class="lower"><a href="register.html">don't have an account?</a></div>
+                    </form>
+                </div>
             </div>
         </body>
         <script src="localstorage1.js"></script>
